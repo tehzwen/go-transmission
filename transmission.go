@@ -14,6 +14,7 @@ const (
 	TORRENT_ADD        = "torrent-add"
 	TORRENT_STOP       = "torrent-stop"
 	TORRENT_START      = "torrent-start"
+	TORRENT_REMOVE     = "torrent-remove"
 	STATUS_DOWNLOADING = 4
 	STATUS_STOPPED     = 0
 )
@@ -167,6 +168,16 @@ func (t *TransmissionClient) StopTorrent(id int) (*TransmissionResponse, error) 
 func (t *TransmissionClient) StartTorrent(id int) (*TransmissionResponse, error) {
 	payload := TransmissionRequest{
 		Method: TORRENT_START,
+		Arguments: TransmissionArguments{
+			Ids: []int{id},
+		},
+	}
+	return t.makeRequest(payload)
+}
+
+func (t *TransmissionClient) RemoveTorrent(id int) (*TransmissionResponse, error) {
+	payload := TransmissionRequest{
+		Method: TORRENT_REMOVE,
 		Arguments: TransmissionArguments{
 			Ids: []int{id},
 		},
