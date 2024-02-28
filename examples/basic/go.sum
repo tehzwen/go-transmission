@@ -1,2 +1,4 @@
 github.com/tehzwen/go-transmission v0.0.0-20240224021135-99568ec0910e h1:mQSMHwfSp4XJqkaTjzUxz5FBESGcHNSQdXQjiNhB4UE=
 github.com/tehzwen/go-transmission v0.0.0-20240224021135-99568ec0910e/go.mod h1:Om3zV+lzcAiOBDNlUhOvKU9a1LYss/j2sXfOkAoWpoY=
+github.com/tehzwen/go-transmission v0.0.0-20240228213435-617691ca3fde h1:hpXv6c5QBELx8UZGSOLZArwZ0E4Qt8P4vg0YfnTMCcw=
+github.com/tehzwen/go-transmission v0.0.0-20240228213435-617691ca3fde/go.mod h1:Om3zV+lzcAiOBDNlUhOvKU9a1LYss/j2sXfOkAoWpoY=
